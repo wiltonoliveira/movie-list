@@ -1,8 +1,8 @@
 <form class="form">
     <mat-form-field class="full-width">
       <mat-label>Search a movie</mat-label>
-      <input matInput placeholder="Harry Potter" value="Batman">
+      <input matInput placeholder="Harry Potter" [formControl]="title">
     </mat-form-field>
-    <button mat-raised-button class="search-btn">Search</button>
+    <button mat-raised-button class="search-btn" (click)="searchMovie()">Search</button>
 </form>
   

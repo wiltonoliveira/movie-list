@@ -1,18 +1,13 @@
 <div class="movie-list-wrapper">
   <div class="title">
-    <h1>The Batman</h1>
-    <h2>2022</h2>
+    <h1>{{ movie.Title }}</h1>
+    <h2>{{ movie.Year }}</h2>
   </div>
   <div class="poster">
-    <img src="../../../assets/batman_poster.jpg" alt="the batman poster" />
+    <img [src]="movie.Poster" alt="movie poster" />
   </div>
-  <p>Director: Matt Reaves</p>
-  <p>Cast: Robert Pattinson, Zoë Kravitz, Colin Farrell</p>
-  <p>
-    When a sadistic serial killer begins murdering key political figures in
-    Gotham, Batman is forced to investigate the city's hidden corruption and
-    question his family's involvement.
-  </p>
-
-  <p>Awards: Nominated for 3 Oscars. 35 wins & 165 nominations total</p>
+  <p>Director: {{ movie.Director }}</p>
+  <p>Cast: {{ movie.Actors }}</p>
+  <p>Plot: {{ movie.Plot }}</p>
+  <p>Awards: {{ movie.Awards }}</p>
 </div>
