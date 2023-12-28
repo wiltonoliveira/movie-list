@@ -1,0 +1,17 @@
+.form {
+  min-width: 150px;
+  max-width: 200rem;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.search-btn {
+  margin-left: .5rem;
+}
